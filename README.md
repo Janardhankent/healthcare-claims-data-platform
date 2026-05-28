@@ -83,11 +83,10 @@ The Silver pipeline reads Bronze data and performs the following transformations
 
 Invalid claim records are written to:
 
-```text
+
 data/error/claims_invalid/claims_invalid.csv
 
-
-## Gold Layer
+### Gold Layer
 
 The Gold layer contains business-ready analytics tables created from the cleaned Silver data.
 
@@ -145,6 +144,5 @@ The Gold layer also creates aggregated reporting tables:
 
 For local Windows development, Gold tables are written as CSV files under:
 
-```text
 data/gold/
 
