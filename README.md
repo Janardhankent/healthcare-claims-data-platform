@@ -86,3 +86,65 @@ Invalid claim records are written to:
 ```text
 data/error/claims_invalid/claims_invalid.csv
 
+
+## Gold Layer
+
+The Gold layer contains business-ready analytics tables created from the cleaned Silver data.
+
+### Gold Processing Logic
+
+The Gold pipeline reads cleaned Silver data and creates dimension, fact, and summary tables for reporting and dashboarding.
+
+### Gold Tables
+
+- dim_patient
+- dim_provider
+- fact_claims
+- claim_summary_monthly
+- provider_performance_summary
+- denial_summary
+- payment_summary
+
+### Main Fact Table
+
+The `fact_claims` table joins claims, patients, providers, and payment data to create a final analytics-ready claims table.
+
+Important columns include:
+
+- claim_id
+- patient_id
+- provider_id
+- claim_date
+- diagnosis_code
+- procedure_code
+- claim_amount
+- status
+- patient_state
+- patient_gender
+- provider_name
+- specialty
+- provider_state
+- total_paid_amount
+- payment_count
+- claim_balance_amount
+- is_denied
+- is_approved
+
+### Summary Tables
+
+The Gold layer also creates aggregated reporting tables:
+
+| Table | Purpose |
+|---|---|
+| claim_summary_monthly | Monthly claim trend and denial rate |
+| provider_performance_summary | Provider-level claim amount, payment, and denial analysis |
+| denial_summary | Denied claims by diagnosis code, specialty, and provider state |
+| payment_summary | Payment and balance summary by claim status |
+
+### Current Local Output
+
+For local Windows development, Gold tables are written as CSV files under:
+
+```text
+data/gold/
+
