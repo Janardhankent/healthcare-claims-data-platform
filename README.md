@@ -146,3 +146,10 @@ For local Windows development, Gold tables are written as CSV files under:
 
 data/gold/
 
+## SQL Analytics Queries
+
+The project includes SQL analytics queries for reporting and dashboard development.
+
+SQL file:
+
+sql/analytics_queries.sql
