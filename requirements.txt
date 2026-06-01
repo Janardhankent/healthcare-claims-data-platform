@@ -1,4 +1,4 @@
-pandas
+pandas>=2.2.0
 faker
 pyspark
 snowflake-connector-python[pandas]

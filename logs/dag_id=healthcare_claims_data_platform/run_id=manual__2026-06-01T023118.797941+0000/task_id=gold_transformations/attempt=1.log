@@ -1,0 +1,71 @@
+[2026-06-01T02:32:03.573+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-01T02:32:03.599+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: healthcare_claims_data_platform.gold_transformations manual__2026-06-01T02:31:18.797941+00:00 [queued]>
+[2026-06-01T02:32:03.610+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: healthcare_claims_data_platform.gold_transformations manual__2026-06-01T02:31:18.797941+00:00 [queued]>
+[2026-06-01T02:32:03.611+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2026-06-01T02:32:03.628+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): gold_transformations> on 2026-06-01 02:31:18.797941+00:00
+[2026-06-01T02:32:03.633+0000] {standard_task_runner.py:72} INFO - Started process 942 to run task
+[2026-06-01T02:32:03.635+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'healthcare_claims_data_platform', 'gold_transformations', 'manual__2026-06-01T02:31:18.797941+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/healthcare_claims_pipeline_dag.py', '--cfg-path', '/tmp/tmp7141xjjo']
+[2026-06-01T02:32:03.637+0000] {standard_task_runner.py:105} INFO - Job 17: Subtask gold_transformations
+[2026-06-01T02:32:03.702+0000] {task_command.py:467} INFO - Running <TaskInstance: healthcare_claims_data_platform.gold_transformations manual__2026-06-01T02:31:18.797941+00:00 [running]> on host e1d1798bde02
+[2026-06-01T02:32:04.011+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='janardhan' AIRFLOW_CTX_DAG_ID='healthcare_claims_data_platform' AIRFLOW_CTX_TASK_ID='gold_transformations' AIRFLOW_CTX_EXECUTION_DATE='2026-06-01T02:31:18.797941+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-01T02:31:18.797941+00:00'
+[2026-06-01T02:32:04.015+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-01T02:32:04.037+0000] {logging_mixin.py:190} INFO - ================================================================================
+[2026-06-01T02:32:04.039+0000] {logging_mixin.py:190} INFO - Running script: /opt/airflow/scripts/gold_transformations.py
+[2026-06-01T02:32:24.761+0000] {logging_mixin.py:190} INFO - STDOUT:
+[2026-06-01T02:32:24.764+0000] {logging_mixin.py:190} INFO - ================================================================================
+Starting Gold layer transformations...
+================================================================================
+Reading Silver file: /opt/airflow/data/silver/patients_clean/patients_clean.csv
+Record count: 1000
+================================================================================
+Reading Silver file: /opt/airflow/data/silver/providers_clean/providers_clean.csv
+Record count: 100
+================================================================================
+Reading Silver file: /opt/airflow/data/silver/claims_clean/claims_clean.csv
+Record count: 5000
+================================================================================
+Reading Silver file: /opt/airflow/data/silver/payments_clean/payments_clean.csv
+Record count: 4000
+================================================================================
+Building Gold dimension and fact tables...
+================================================================================
+Building Gold summary tables...
+================================================================================
+Gold record counts:
+dim_patient count: 1000
+dim_provider count: 100
+fact_claims count: 5000
+claim_summary_monthly count: 12
+provider_performance_summary count: 100
+denial_summary count: 273
+payment_summary count: 4
+================================================================================
+Writing Gold outputs...
+Written Gold file: /opt/airflow/data/gold/dim_patient/dim_patient.csv
+Record count: 1000
+Written Gold file: /opt/airflow/data/gold/dim_provider/dim_provider.csv
+Record count: 100
+Written Gold file: /opt/airflow/data/gold/fact_claims/fact_claims.csv
+Record count: 5000
+Written Gold file: /opt/airflow/data/gold/claim_summary_monthly/claim_summary_monthly.csv
+Record count: 12
+Written Gold file: /opt/airflow/data/gold/provider_performance_summary/provider_performance_summary.csv
+Record count: 100
+Written Gold file: /opt/airflow/data/gold/denial_summary/denial_summary.csv
+Record count: 273
+Written Gold file: /opt/airflow/data/gold/payment_summary/payment_summary.csv
+Record count: 4
+================================================================================
+Gold transformation completed successfully.
+[2026-06-01T02:32:24.765+0000] {logging_mixin.py:190} INFO - STDERR:
+[2026-06-01T02:32:24.766+0000] {logging_mixin.py:190} INFO - WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/06/01 02:32:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2026-06-01T02:32:24.767+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-01T02:32:24.786+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-01T02:32:24.786+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=healthcare_claims_data_platform, task_id=gold_transformations, run_id=manual__2026-06-01T02:31:18.797941+00:00, execution_date=20260601T023118, start_date=20260601T023203, end_date=20260601T023224
+[2026-06-01T02:32:24.883+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-01T02:32:24.921+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-01T02:32:24.931+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

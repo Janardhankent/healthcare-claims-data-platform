@@ -1,101 +1,101 @@
 provider_id,provider_name,specialty,state,npi
-PR0001,Berg-Aguilar,Radiology,GA,4106836221
-PR0002,Rodriguez-Anthony,Dermatology,TX,9331122190
-PR0003,"Smith, Robinson and House",Neurology,FL,3173296531
-PR0004,Murillo-Bradley,Cardiology,AZ,1104528174
-PR0005,"Potter, Baird and Wyatt",Dermatology,CA,0281641323
-PR0006,"Todd, Russell and Bryant",Orthopedics,IL,6686008015
-PR0007,Hughes-Gonzalez,Oncology,CA,5169070743
-PR0008,"Sheppard, Jackson and Graham",Oncology,IL,1017124478
-PR0009,"Meadows, Phillips and Booker",Dermatology,IL,1463672535
-PR0010,"Carlson, Thompson and Pennington",Neurology,NY,1854934175
-PR0011,Wade-Hartman,Orthopedics,TX,3568578657
-PR0012,Ferguson-Alvarez,Cardiology,IL,2296089964
-PR0013,Frost Group,Orthopedics,NY,7456841466
-PR0014,Larsen-Rivera,Dermatology,GA,3563658995
-PR0015,Barnes-Dixon,Radiology,FL,9826606959
-PR0016,Vincent Group,Orthopedics,FL,3674995898
-PR0017,Thompson-Sullivan,Orthopedics,NY,9665167638
-PR0018,Palmer-Bryant,Oncology,GA,2376515799
-PR0019,Thompson-Davis,Radiology,TX,0040545847
-PR0020,Nguyen LLC,Radiology,TX,3368438387
-PR0021,Taylor-Harper,Orthopedics,IL,8755817715
-PR0022,"Alvarez, Anderson and Hernandez",Neurology,GA,1560685717
-PR0023,Harris-Robbins,Primary Care,CA,6151217356
-PR0024,"Adams, Summers and Graham",Oncology,AZ,1190895736
-PR0025,Schultz Inc,Orthopedics,FL,5735445377
-PR0026,Wade-Chan,Neurology,FL,2021858641
-PR0027,Jones-Kim,Dermatology,IL,3222550858
-PR0028,"Rollins, Mclaughlin and Baird",Primary Care,IL,2576081606
-PR0029,Contreras-Lee,Dermatology,NY,6379221078
-PR0030,Moore-Wallace,Primary Care,IL,6051521156
-PR0031,"Brown, Marshall and Cox",Orthopedics,AZ,4390382286
-PR0032,Burch Group,Neurology,FL,1311319778
-PR0033,Lee-Smith,Primary Care,NY,2835543253
-PR0034,"Gutierrez, Dunn and Holden",Primary Care,TX,3591131385
-PR0035,Vargas-Roberts,Dermatology,FL,7625724506
-PR0036,"Simmons, Stevens and Porter",Oncology,GA,4362220173
-PR0037,Reilly-Johnson,Primary Care,NY,3853765397
-PR0038,Coleman and Sons,Primary Care,GA,8519736417
-PR0039,Cohen LLC,Radiology,AZ,3744106607
-PR0040,"Vasquez, Waters and Vasquez",Orthopedics,GA,8763224059
-PR0041,"Hebert, Weaver and Stone",Dermatology,NY,7463059338
-PR0042,Wright-Watson,Neurology,FL,7215197138
-PR0043,Parsons and Sons,Neurology,AZ,1657328248
-PR0044,"Wilson, Johnson and Montoya",Primary Care,FL,0215622814
-PR0045,Preston-Ingram,Oncology,CA,0813026489
-PR0046,"Smith, Miller and Blevins",Neurology,GA,4276335195
-PR0047,"Hill, Hill and Clarke",Orthopedics,CA,7529012308
-PR0048,Drake PLC,Neurology,GA,4149090216
-PR0049,Edwards Ltd,Oncology,TX,9298790771
-PR0050,"Gutierrez, Spencer and Meyer",Dermatology,GA,7708538509
-PR0051,"Hodges, Bennett and Stewart",Orthopedics,NY,7245784899
-PR0052,Peters Group,Dermatology,NY,8939063445
-PR0053,Peterson-Lewis,Neurology,NY,4693770454
-PR0054,"Smith, Carlson and Stokes",Orthopedics,TX,9797739214
-PR0055,Jacobson-Cervantes,Oncology,NY,2684825701
-PR0056,James-Wallace,Cardiology,IL,2762972358
-PR0057,Juarez and Sons,Primary Care,IL,6260222458
-PR0058,"Thompson, Sweeney and Watson",Oncology,AZ,8801236272
-PR0059,Clark Ltd,Oncology,FL,3847171533
-PR0060,"Davis, Howard and Macias",Radiology,AZ,2714326981
-PR0061,Smith Inc,Primary Care,CA,9259011133
-PR0062,"Brady, Vasquez and Brown",Dermatology,NY,0178823022
-PR0063,"Reeves, Allen and Vincent",Orthopedics,TX,5302612493
-PR0064,"Sanchez, Ayala and Jacobs",Radiology,GA,1646113918
-PR0065,Spencer LLC,Orthopedics,FL,9197943668
-PR0066,Parker-Miller,Cardiology,IL,8977845129
-PR0067,Hood Inc,Neurology,AZ,7754800800
-PR0068,Martinez-Brown,Cardiology,NY,1564152721
-PR0069,Romero-Hunter,Dermatology,TX,4144662952
-PR0070,"Jones, Owens and Bowers",Primary Care,TX,1986154475
-PR0071,"Anderson, Holland and Parsons",Radiology,FL,0831557348
-PR0072,"Oneill, Shaffer and Walton",Cardiology,AZ,3817097385
-PR0073,Wolf Group,Radiology,AZ,2258212151
-PR0074,"Steele, Williams and Johnson",Cardiology,TX,7285596750
-PR0075,Robinson LLC,Cardiology,CA,0140501786
-PR0076,Frey Ltd,Dermatology,IL,5954314760
-PR0077,Hansen-Jackson,Radiology,TX,8007901205
-PR0078,Simpson LLC,Orthopedics,FL,3954845877
-PR0079,Coleman PLC,Radiology,NY,5171429164
-PR0080,Schroeder LLC,Primary Care,GA,6793502461
-PR0081,"Johnson, Nguyen and Parks",Dermatology,NY,3439791946
-PR0082,"Robinson, Jones and Esparza",Radiology,GA,2828114945
-PR0083,Tapia-Mcdowell,Radiology,CA,6241432677
-PR0084,Williams LLC,Oncology,FL,7663281070
-PR0085,"Rose, Sullivan and Davis",Radiology,CA,3333585817
-PR0086,Jones PLC,Orthopedics,AZ,0519981951
-PR0087,Woodard Ltd,Neurology,TX,4941470280
-PR0088,Fernandez-Ibarra,Cardiology,IL,6736613107
-PR0089,"Torres, Howe and Campbell",Oncology,NY,6108642627
-PR0090,Hanson-Lee,Primary Care,TX,4356356680
-PR0091,Lindsey-Ashley,Oncology,FL,3692159796
-PR0092,"Young, Kim and Pruitt",Dermatology,FL,8066983348
-PR0093,Williams Inc,Oncology,TX,1046262306
-PR0094,"Smith, Keller and Marquez",Primary Care,FL,6968210895
-PR0095,Stephenson Ltd,Oncology,NY,5845522462
-PR0096,Mason Inc,Radiology,GA,5773119996
-PR0097,Rivas-Vargas,Neurology,FL,9551132185
-PR0098,Ward Inc,Orthopedics,FL,3093163382
-PR0099,"Stephenson, Powell and Greer",Primary Care,CA,4009669830
-PR0100,"Thompson, Bowman and Diaz",Primary Care,GA,0399194258
+PR0001,Nichols Group,Cardiology,FL,5932246524
+PR0002,"Jenkins, Wilkerson and Thomas",Orthopedics,NY,2889604145
+PR0003,Flowers-Sandoval,Oncology,FL,0521498059
+PR0004,Nunez-Pierce,Radiology,FL,8824906256
+PR0005,Miller PLC,Primary Care,NY,3761147484
+PR0006,Young-Wright,Neurology,FL,1000041046
+PR0007,"Frye, Moore and Marks",Neurology,TX,1365906247
+PR0008,"Johnson, Rivera and Palmer",Dermatology,GA,6440308792
+PR0009,Warren-Cook,Orthopedics,GA,5008912769
+PR0010,"Henry, Ruiz and Perez",Primary Care,IL,9315049277
+PR0011,"Rice, Hutchinson and Greer",Radiology,AZ,3029034443
+PR0012,"Ferguson, Simpson and Swanson",Primary Care,NY,9592206949
+PR0013,Anderson LLC,Oncology,TX,6822308211
+PR0014,Diaz-Duncan,Dermatology,TX,2387541848
+PR0015,Strickland-Valdez,Primary Care,AZ,0757584074
+PR0016,Potts Inc,Dermatology,TX,2603785267
+PR0017,Hoffman Ltd,Oncology,CA,9713449353
+PR0018,Glover Inc,Neurology,CA,2725245603
+PR0019,Robertson Ltd,Oncology,NY,2934321368
+PR0020,Smith-Schultz,Oncology,IL,6966513760
+PR0021,Nguyen LLC,Oncology,NY,6635119680
+PR0022,"Gordon, Stewart and Miller",Neurology,AZ,3598039622
+PR0023,"Moore, Roberson and Boyer",Radiology,GA,9785219002
+PR0024,"Garrison, Francis and Fitzgerald",Cardiology,FL,4520124202
+PR0025,Rodriguez and Sons,Neurology,FL,9792953377
+PR0026,"Stewart, Moore and Parker",Orthopedics,IL,6289464045
+PR0027,Mcclure Inc,Neurology,FL,7207387557
+PR0028,Olsen Inc,Radiology,GA,2910691565
+PR0029,"Ortega, Moore and Duffy",Dermatology,NY,0028280352
+PR0030,Abbott PLC,Radiology,FL,5535268870
+PR0031,Adams Group,Cardiology,CA,0264517862
+PR0032,"Copeland, Peterson and Rich",Primary Care,AZ,5062758447
+PR0033,Taylor-Morgan,Neurology,IL,6174427361
+PR0034,"Yang, Liu and Luna",Neurology,AZ,0486119543
+PR0035,Johnson and Sons,Radiology,AZ,6509821903
+PR0036,Henderson Group,Dermatology,NY,3656810632
+PR0037,Cortez Inc,Dermatology,GA,5589819314
+PR0038,Taylor LLC,Neurology,IL,3449574047
+PR0039,Ho PLC,Orthopedics,AZ,6160247689
+PR0040,"Reyes, May and Cox",Neurology,IL,6255879660
+PR0041,Cantrell Group,Radiology,GA,7306732666
+PR0042,Miller-Castillo,Primary Care,CA,7662561015
+PR0043,"Collins, Bishop and Green",Oncology,TX,0169373110
+PR0044,Miller Inc,Oncology,FL,1970553382
+PR0045,Olson-Nguyen,Neurology,GA,1233016317
+PR0046,Moore-Bradley,Neurology,NY,6198570325
+PR0047,"Johnson, Hernandez and Cunningham",Primary Care,TX,8263123590
+PR0048,Thompson Group,Orthopedics,AZ,1673822772
+PR0049,Miller Ltd,Primary Care,AZ,9508962784
+PR0050,Martin PLC,Primary Care,TX,0936458347
+PR0051,"Perez, Garcia and Ramos",Dermatology,TX,8648006090
+PR0052,Campos-Lee,Dermatology,CA,5277595234
+PR0053,"Smith, Mills and Johnson",Orthopedics,GA,7207293665
+PR0054,Small Inc,Primary Care,NY,7357620473
+PR0055,Williams LLC,Primary Care,FL,0590040279
+PR0056,"Jones, Simpson and Gaines",Primary Care,FL,6000400336
+PR0057,Malone LLC,Dermatology,GA,1587030928
+PR0058,Maddox and Sons,Neurology,NY,6169682219
+PR0059,Harper-Potter,Primary Care,AZ,1734909264
+PR0060,"Franco, Jensen and Bond",Dermatology,CA,5208443345
+PR0061,Wilson-Walker,Orthopedics,TX,0529431160
+PR0062,Fischer Group,Orthopedics,FL,7007505956
+PR0063,"Robertson, Coleman and Moore",Primary Care,CA,6239017189
+PR0064,"Pace, Thompson and Coffey",Oncology,CA,9004631258
+PR0065,Rowe and Sons,Oncology,GA,8287523868
+PR0066,Brown PLC,Neurology,CA,1073661119
+PR0067,"Ferguson, Park and Reyes",Orthopedics,TX,2523036241
+PR0068,Matthews and Sons,Neurology,TX,7534216858
+PR0069,Robinson Group,Neurology,NY,5836269165
+PR0070,"Campbell, Davis and Gould",Primary Care,CA,1714048520
+PR0071,Randall-Harrison,Cardiology,AZ,0977291526
+PR0072,Cross Inc,Oncology,TX,6089830343
+PR0073,Mckenzie Inc,Oncology,GA,7890954579
+PR0074,Thompson LLC,Dermatology,TX,4621629151
+PR0075,"Holland, Fowler and Zimmerman",Radiology,NY,9215131268
+PR0076,Johnston Ltd,Primary Care,FL,8828235782
+PR0077,Boyd and Sons,Orthopedics,TX,4250599025
+PR0078,Wise LLC,Primary Care,AZ,3148848999
+PR0079,"Franklin, Malone and George",Orthopedics,GA,9030234256
+PR0080,"Cole, Clark and Hubbard",Oncology,GA,8656173337
+PR0081,"Bryant, Barber and Jones",Primary Care,FL,3001342983
+PR0082,"Nelson, Sanchez and Peterson",Primary Care,TX,9229932630
+PR0083,"Rodriguez, Steele and Ochoa",Oncology,TX,8599796218
+PR0084,Duran PLC,Orthopedics,TX,1360777648
+PR0085,"Avery, Miller and Mendez",Dermatology,TX,5663981330
+PR0086,Strickland-Alvarez,Cardiology,FL,1413089195
+PR0087,"Mckee, Sandoval and Lopez",Neurology,CA,5168982722
+PR0088,Ramos-Collins,Orthopedics,AZ,4152315776
+PR0089,Molina-Martinez,Radiology,FL,7027523063
+PR0090,Duncan-Thompson,Radiology,IL,1882337486
+PR0091,"Rogers, Hill and Lloyd",Radiology,TX,7284784515
+PR0092,Gonzalez-Graves,Primary Care,FL,7107388783
+PR0093,"Jacobs, Johnson and Cooper",Orthopedics,AZ,6506498409
+PR0094,Villarreal Group,Dermatology,IL,6052733768
+PR0095,Gibson and Sons,Dermatology,AZ,7333471807
+PR0096,"Lee, Garza and Flores",Neurology,GA,7027573551
+PR0097,"Barajas, Skinner and Hill",Radiology,TX,4554894002
+PR0098,Castillo PLC,Cardiology,GA,7669746536
+PR0099,Scott Inc,Orthopedics,GA,9493725934
+PR0100,Barker-Curry,Dermatology,TX,2485788227

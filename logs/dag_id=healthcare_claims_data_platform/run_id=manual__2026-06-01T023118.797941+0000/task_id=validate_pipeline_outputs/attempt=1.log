@@ -1,0 +1,43 @@
+[2026-06-01T02:32:56.973+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-01T02:32:56.987+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: healthcare_claims_data_platform.validate_pipeline_outputs manual__2026-06-01T02:31:18.797941+00:00 [queued]>
+[2026-06-01T02:32:56.998+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: healthcare_claims_data_platform.validate_pipeline_outputs manual__2026-06-01T02:31:18.797941+00:00 [queued]>
+[2026-06-01T02:32:56.999+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2026-06-01T02:32:57.014+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): validate_pipeline_outputs> on 2026-06-01 02:31:18.797941+00:00
+[2026-06-01T02:32:57.017+0000] {standard_task_runner.py:72} INFO - Started process 1525 to run task
+[2026-06-01T02:32:57.019+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'healthcare_claims_data_platform', 'validate_pipeline_outputs', 'manual__2026-06-01T02:31:18.797941+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/healthcare_claims_pipeline_dag.py', '--cfg-path', '/tmp/tmphmw4h27f']
+[2026-06-01T02:32:57.020+0000] {standard_task_runner.py:105} INFO - Job 19: Subtask validate_pipeline_outputs
+[2026-06-01T02:32:57.081+0000] {task_command.py:467} INFO - Running <TaskInstance: healthcare_claims_data_platform.validate_pipeline_outputs manual__2026-06-01T02:31:18.797941+00:00 [running]> on host e1d1798bde02
+[2026-06-01T02:32:57.159+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='janardhan' AIRFLOW_CTX_DAG_ID='healthcare_claims_data_platform' AIRFLOW_CTX_TASK_ID='validate_pipeline_outputs' AIRFLOW_CTX_EXECUTION_DATE='2026-06-01T02:31:18.797941+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-01T02:31:18.797941+00:00'
+[2026-06-01T02:32:57.160+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-01T02:32:57.169+0000] {logging_mixin.py:190} INFO - ================================================================================
+[2026-06-01T02:32:57.169+0000] {logging_mixin.py:190} INFO - Running script: /opt/airflow/scripts/validate_pipeline_outputs.py
+[2026-06-01T02:32:57.926+0000] {logging_mixin.py:190} INFO - STDOUT:
+[2026-06-01T02:32:57.927+0000] {logging_mixin.py:190} INFO - ================================================================================
+Starting pipeline output validation...
+File exists: raw_patients
+raw_patients record count: 1000
+File exists: raw_providers
+raw_providers record count: 100
+File exists: raw_claims
+raw_claims record count: 5003
+File exists: bronze_patients
+bronze_patients record count: 1000
+File exists: bronze_claims
+bronze_claims record count: 5003
+File exists: silver_claims
+silver_claims record count: 5000
+File exists: error_claims
+error_claims record count: 3
+File exists: gold_fact_claims
+gold_fact_claims record count: 5000
+File exists: gold_provider_summary
+gold_provider_summary record count: 100
+================================================================================
+Pipeline validation completed successfully.
+[2026-06-01T02:32:57.927+0000] {logging_mixin.py:190} INFO - STDERR:
+[2026-06-01T02:32:57.928+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-01T02:32:57.935+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-01T02:32:57.935+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=healthcare_claims_data_platform, task_id=validate_pipeline_outputs, run_id=manual__2026-06-01T02:31:18.797941+00:00, execution_date=20260601T023118, start_date=20260601T023256, end_date=20260601T023257
+[2026-06-01T02:32:58.015+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-01T02:32:58.027+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-01T02:32:58.028+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -153,3 +153,55 @@ The project includes SQL analytics queries for reporting and dashboard developme
 SQL file:
 
 sql/analytics_queries.sql
+
+## Power BI Dashboard Connected to Snowflake
+
+The Power BI dashboard connects directly to Snowflake Gold tables.
+
+### Snowflake Source
+
+- Warehouse: HEALTHCARE_WH
+- Database: HEALTHCARE_CLAIMS_DB
+- Schema: GOLD
+
+### Power BI Tables
+
+- DIM_PATIENT
+- DIM_PROVIDER
+- FACT_CLAIMS
+- CLAIM_SUMMARY_MONTHLY
+- PROVIDER_PERFORMANCE_SUMMARY
+- DENIAL_SUMMARY
+- PAYMENT_SUMMARY
+
+### Data Model
+
+Relationships:
+
+- DIM_PATIENT[PATIENT_ID] → FACT_CLAIMS[PATIENT_ID]
+- DIM_PROVIDER[PROVIDER_ID] → FACT_CLAIMS[PROVIDER_ID]
+
+### Dashboard Pages
+
+- Executive Summary
+- Provider Performance
+- Denial Analysis
+- Payment Analysis
+
+
+## Airflow DAG Execution
+
+The healthcare claims pipeline was orchestrated using Apache Airflow.
+
+The DAG runs the following tasks in sequence:
+
+1. generate_raw_data
+2. bronze_ingestion
+3. silver_transformations
+4. gold_transformations
+5. load_gold_to_snowflake
+6. validate_pipeline_outputs
+
+The DAG was successfully executed locally using Docker-based Airflow.
+
+

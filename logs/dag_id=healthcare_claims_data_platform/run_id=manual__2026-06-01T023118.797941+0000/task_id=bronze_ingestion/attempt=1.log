@@ -1,0 +1,128 @@
+[2026-06-01T02:31:25.262+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-01T02:31:25.276+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: healthcare_claims_data_platform.bronze_ingestion manual__2026-06-01T02:31:18.797941+00:00 [queued]>
+[2026-06-01T02:31:25.286+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: healthcare_claims_data_platform.bronze_ingestion manual__2026-06-01T02:31:18.797941+00:00 [queued]>
+[2026-06-01T02:31:25.287+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2026-06-01T02:31:25.303+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): bronze_ingestion> on 2026-06-01 02:31:18.797941+00:00
+[2026-06-01T02:31:25.306+0000] {standard_task_runner.py:72} INFO - Started process 64 to run task
+[2026-06-01T02:31:25.309+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'healthcare_claims_data_platform', 'bronze_ingestion', 'manual__2026-06-01T02:31:18.797941+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/healthcare_claims_pipeline_dag.py', '--cfg-path', '/tmp/tmpbcga59ej']
+[2026-06-01T02:31:25.311+0000] {standard_task_runner.py:105} INFO - Job 15: Subtask bronze_ingestion
+[2026-06-01T02:31:25.375+0000] {task_command.py:467} INFO - Running <TaskInstance: healthcare_claims_data_platform.bronze_ingestion manual__2026-06-01T02:31:18.797941+00:00 [running]> on host e1d1798bde02
+[2026-06-01T02:31:25.458+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='janardhan' AIRFLOW_CTX_DAG_ID='healthcare_claims_data_platform' AIRFLOW_CTX_TASK_ID='bronze_ingestion' AIRFLOW_CTX_EXECUTION_DATE='2026-06-01T02:31:18.797941+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-01T02:31:18.797941+00:00'
+[2026-06-01T02:31:25.460+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-06-01T02:31:25.471+0000] {logging_mixin.py:190} INFO - ================================================================================
+[2026-06-01T02:31:25.471+0000] {logging_mixin.py:190} INFO - Running script: /opt/airflow/scripts/bronze_ingestion.py
+[2026-06-01T02:31:36.820+0000] {logging_mixin.py:190} INFO - STDOUT:
+[2026-06-01T02:31:36.823+0000] {logging_mixin.py:190} INFO - ================================================================================
+Processing source: patients
+Input file: /opt/airflow/data/raw/patients.csv
+Raw record count for patients: 1000
+Bronze schema for patients:
+root
+ |-- patient_id: string (nullable = true)
+ |-- first_name: string (nullable = true)
+ |-- last_name: string (nullable = true)
+ |-- dob: date (nullable = true)
+ |-- gender: string (nullable = true)
+ |-- state: string (nullable = true)
+ |-- created_date: date (nullable = true)
+ |-- ingestion_timestamp: timestamp (nullable = false)
+ |-- source_system: string (nullable = false)
+ |-- source_file_name: string (nullable = false)
+ |-- bronze_table_name: string (nullable = false)
+
+Successfully written bronze table: patients
+Output file: /opt/airflow/data/bronze/patients/patients_bronze.csv
+Completed processing: patients
+================================================================================
+Processing source: providers
+Input file: /opt/airflow/data/raw/providers.csv
+Raw record count for providers: 100
+Bronze schema for providers:
+root
+ |-- provider_id: string (nullable = true)
+ |-- provider_name: string (nullable = true)
+ |-- specialty: string (nullable = true)
+ |-- state: string (nullable = true)
+ |-- npi: long (nullable = true)
+ |-- ingestion_timestamp: timestamp (nullable = false)
+ |-- source_system: string (nullable = false)
+ |-- source_file_name: string (nullable = false)
+ |-- bronze_table_name: string (nullable = false)
+
+Successfully written bronze table: providers
+Output file: /opt/airflow/data/bronze/providers/providers_bronze.csv
+Completed processing: providers
+================================================================================
+Processing source: claims
+Input file: /opt/airflow/data/raw/claims.csv
+Raw record count for claims: 5003
+Bronze schema for claims:
+root
+ |-- claim_id: string (nullable = true)
+ |-- patient_id: string (nullable = true)
+ |-- provider_id: string (nullable = true)
+ |-- claim_date: date (nullable = true)
+ |-- diagnosis_code: string (nullable = true)
+ |-- procedure_code: integer (nullable = true)
+ |-- claim_amount: double (nullable = true)
+ |-- status: string (nullable = true)
+ |-- created_timestamp: timestamp (nullable = true)
+ |-- ingestion_timestamp: timestamp (nullable = false)
+ |-- source_system: string (nullable = false)
+ |-- source_file_name: string (nullable = false)
+ |-- bronze_table_name: string (nullable = false)
+
+Successfully written bronze table: claims
+Output file: /opt/airflow/data/bronze/claims/claims_bronze.csv
+Completed processing: claims
+================================================================================
+Processing source: payments
+Input file: /opt/airflow/data/raw/payments.csv
+Raw record count for payments: 4000
+Bronze schema for payments:
+root
+ |-- payment_id: string (nullable = true)
+ |-- claim_id: string (nullable = true)
+ |-- payment_date: date (nullable = true)
+ |-- paid_amount: double (nullable = true)
+ |-- payment_method: string (nullable = true)
+ |-- ingestion_timestamp: timestamp (nullable = false)
+ |-- source_system: string (nullable = false)
+ |-- source_file_name: string (nullable = false)
+ |-- bronze_table_name: string (nullable = false)
+
+Successfully written bronze table: payments
+Output file: /opt/airflow/data/bronze/payments/payments_bronze.csv
+Completed processing: payments
+================================================================================
+Processing source: claim_status_history
+Input file: /opt/airflow/data/raw/claim_status_history.csv
+Raw record count for claim_status_history: 10000
+Bronze schema for claim_status_history:
+root
+ |-- claim_id: string (nullable = true)
+ |-- status: string (nullable = true)
+ |-- updated_timestamp: timestamp (nullable = true)
+ |-- reason: string (nullable = true)
+ |-- ingestion_timestamp: timestamp (nullable = false)
+ |-- source_system: string (nullable = false)
+ |-- source_file_name: string (nullable = false)
+ |-- bronze_table_name: string (nullable = false)
+
+Successfully written bronze table: claim_status_history
+Output file: /opt/airflow/data/bronze/claim_status_history/claim_status_history_bronze.csv
+Completed processing: claim_status_history
+================================================================================
+Bronze ingestion completed successfully.
+[2026-06-01T02:31:36.823+0000] {logging_mixin.py:190} INFO - STDERR:
+[2026-06-01T02:31:36.823+0000] {logging_mixin.py:190} INFO - WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/06/01 02:31:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2026-06-01T02:31:36.823+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-01T02:31:36.830+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-06-01T02:31:36.830+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=healthcare_claims_data_platform, task_id=bronze_ingestion, run_id=manual__2026-06-01T02:31:18.797941+00:00, execution_date=20260601T023118, start_date=20260601T023125, end_date=20260601T023136
+[2026-06-01T02:31:36.892+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-01T02:31:36.909+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-01T02:31:36.917+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
